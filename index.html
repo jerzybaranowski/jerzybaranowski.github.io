@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jerzy Baranowski's homepage</title>
+  <style>
+    :root {
+      --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --logo-size: 56px;
+      --gap: 16px;
+      --hover-scale: 1.06;
+      --max-width: 720px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      max-width: var(--max-width);
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    header h1 {
+      font-family: var(--font-body);
+      font-size: 1.9rem;
+      margin: 0.5em 0;
+    }
+
+    .profile-photo {
+      display: block;
+      margin: 0 auto 1em auto;
+      max-width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5em;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.2em;
+    }
+
+    .logo-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--gap);
+      padding: 8px 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .logo-item a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--logo-size);
+      height: var(--logo-size);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+
+    .logo-item a:hover {
+      transform: scale(var(--hover-scale));
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .logo-item img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Jerzy Baranowski's homepage</h1>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Jerzyabaranowski_photo.jpg"
+      alt="Photo of Jerzy Baranowski"
+      class="profile-photo" />
+  </header>
+
+  <section>
+    <h2>Who am I?</h2>
+    <p>My name is Jerzy Baranowski.</p>
+    <p>I’m a full professor at AGH University of Science &amp; Technology.</p>
+    <p>I lead the Laboratory of Computer Science for Control and Management in the Department of Automatic Control and Robotics.</p>
+    <p>My main research interests are Bayesian data analysis, process diagnostics and automatic control. My publications can be found at links below.</p>
+    <p>I teach numerical methods and data analytics. Course materials can be found on GitHub and lectures on YouTube.</p>
+    <p>You can get in touch with me through Twitter or by my official AGH mail: <code>jb(at)agh.edu.pl</code></p>
+  </section>
+
+  <!-- Logos row -->
+  <ul class="logo-row" aria-label="External profile links">
+    <!-- Scopus -->
+    <li class="logo-item">
+      <a href="https://example.com/your-scopus" target="_blank" rel="noopener noreferrer" aria-label="Scopus profile">
+        <img src="https://cdn.simpleicons.org/scopus/EF6C00" alt="Scopus" />
+      </a>
+    </li>
+    <!-- ORCID -->
+    <li class="logo-item">
+      <a href="https://example.com/your-orcid" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">
+        <img src="https://cdn.simpleicons.org/orcid/A6CE39" alt="ORCID" />
+      </a>
+    </li>
+    <!-- Web of Science (placeholder) -->
+    <li class="logo-item">
+      <a href="https://example.com/your-webofscience" target="_blank" rel="noopener noreferrer" aria-label="Web of Science profile">
+        <img src="CLVT.svg" alt="Web of Science placeholder" />
+      </a>
+    </li>
+    <!-- X -->
+    <li class="logo-item">
+      <a href="https://example.com/your-x" target="_blank" rel="noopener noreferrer" aria-label="X profile">
+        <img src="https://cdn.simpleicons.org/x/000000" alt="X" />
+      </a>
+    </li>
+    <!-- YouTube -->
+    <li class="logo-item">
+      <a href="https://example.com/your-youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube channel">
+        <img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube" />
+      </a>
+    </li>
+    <!-- Instagram -->
+    <li class="logo-item">
+      <a href="https://example.com/your-instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile">
+        <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" />
+      </a>
+    </li>
+    <!-- GitHub -->
+    <li class="logo-item">
+      <a href="https://example.com/your-github" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+        <img src="https://cdn.simpleicons.org/github/181717" alt="GitHub" />
+      </a>
+    </li>
+    <!-- LinkedIn -->
+    <li class="logo-item">
+      <a href="https://example.com/your-linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" />
+      </a>
+    </li>
+    <!-- AGH (placeholder) -->
+    <li class="logo-item">
+      <a href="https://example.com/your-agh" target="_blank" rel="noopener noreferrer" aria-label="AGH profile">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/AGH_University_of_Science_and_Technology_Logo.svg" alt="AGH placeholder" />
+      </a>
+    </li>
+  </ul>
+
+  <footer>
+    &copy; 2025 Jerzy Baranowski
+  </footer>
+</main>
+</body>
+</html>
